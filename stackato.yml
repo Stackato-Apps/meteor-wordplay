@@ -1,0 +1,9 @@
+name: meteor-wordplay
+
+buildpack: https://github.com/btat/cloudfoundry-buildpack-meteorite.git
+
+services:
+  ${name}-db: mongodb
+
+env:
+  MONGO_URL: $MONGODB_URL
