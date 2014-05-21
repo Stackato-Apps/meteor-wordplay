@@ -1,6 +1,6 @@
 name: meteor-wordplay
 
-buildpack: https://github.com/btat/cloudfoundry-buildpack-meteorite.git
+buildpack: https://github.com/ActiveState/cloudfoundry-buildpack-meteorite.git
 
 services:
   ${name}-db: mongodb
