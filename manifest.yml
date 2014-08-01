@@ -1,0 +1,10 @@
+applications:
+- name: meteor-wordplay
+  buildpack: https://github.com/ActiveState/cloudfoundry-buildpack-meteorite.git
+  services:
+    ${name}-db:
+      type: mongodb
+  stackato:
+    env:
+      MONGO_URL:
+        default: $MONGODB_URL
