@@ -1,9 +1,11 @@
 name: meteor-wordplay
 
-buildpack: https://github.com/ActiveState/cloudfoundry-buildpack-meteorite.git
+framework:
+  type: buildpack
 
 services:
   ${name}-db: mongodb
 
 env:
   MONGO_URL: $MONGODB_URL
+  BUILDPACK_URL: https://github.com/ActiveState/cloudfoundry-buildpack-meteorite.git
