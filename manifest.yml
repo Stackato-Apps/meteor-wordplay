@@ -1,6 +1,7 @@
 applications:
 - name: meteor-wordplay
-  buildpack: https://github.com/ActiveState/cloudfoundry-buildpack-meteorite.git
+  buildpack: https://github.com/hpcloud/cloudfoundry-buildpack-meteorite.git
+  memory: 64M
   services:
     ${name}-db:
       type: mongodb
